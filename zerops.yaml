@@ -1,1 +1,7 @@
-
+zerops:
+  - setup:
+      base: nodejs@22
+    build:
+      - npm install
+    run:
+      start: node index.js
