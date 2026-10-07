@@ -1,7 +1,9 @@
 zerops:
-  - setup:
-      base: nodejs@22
+  - setup: nodejs
     build:
-      - npm install
+      base: nodejs@22
+      buildCommands:
+        - npm install
     run:
+      base: nodejs@22
       start: node index.js
